@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json
+import getpass
 from datetime import datetime, timedelta
 from student import register, list_students, search
 
@@ -16,7 +17,10 @@ def login():
         print("System locked! Try later."); return False
     
     for i in range(3):
-        if input("Username: ") == "admin" and input("Password: ") == "admin":
+        username = input("Username: ").strip()
+        password = getpass.getpass("Password: ")  # Hidden password input
+        
+        if username == "admin" and password == "admin":
             save_data("attempts.json", {"fails": 0, "locked": None})
             return True
         print(f"Wrong! {2-i} attempts left")

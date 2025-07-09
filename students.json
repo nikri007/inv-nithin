@@ -7,5 +7,14 @@
     "phone": "7306904340",
     "course": "Computer Science",
     "date": "2025-07-08"
+  },
+  {
+    "name": "Nithin Krishna",
+    "reg": "12121",
+    "age": 25,
+    "email": "nithin@1gamil.com",
+    "phone": "3566565651",
+    "course": "IT",
+    "date": "2025-07-09"
   }
 ]
